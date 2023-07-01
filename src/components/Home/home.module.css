@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Rubik:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap');
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+.App {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+section {
+  animation: fadeIn 1s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px);
+  animation-fill-mode: forwards;
+}
+.search{
+  border:10px solid rgb(164, 95, 229);
+  margin-bottom: 30px;
+  font-size: 25px;
+  padding: 20px;
+  color:white;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: rgb(0,0,0,0.3);
+}
+.con1,.con2{
+  background-image: url('../assets/bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border:2px solid red; */
+}
+.con3{
+  background-color: #8a85c7;
+}
+
+.Features,.Benefits{
+  border: 20px solid rgb(164, 95, 229);
+  border-radius: 20px;
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding:50px 20px;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  background-color: rgb(10,10,10,0.4);
+  color:white
+
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  /* border: 2px solid red; */
+  width:30%
+}
+
+li {
+  margin-bottom: 10px;
+}
+.Features>h2{
+  width: 20%;
+  text-align: left;
+}
+.footer{
+  padding: 40px;
+  background-color: #8a85c7;
+  font-family: 'Frank Ruhl Libre', serif;
+  height: 100px;
+  color:white
+}
+
+.footer h2 {
+  margin-bottom: 20px;
+}
+
+.footer p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 480px) {
+
+  section {
+    margin-left: 10px;
+    height: 300px;
+    margin-right: 10px;
+  }
+  ul{
+    width:100%
+  }
+}

@@ -1,0 +1,105 @@
+.Logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 5px ;
+    cursor: pointer;
+    border-radius:10px ;
+    border: 2px solid white;
+    background-color: rgb(10,10,10,0.1);
+  }
+  .Appheader {
+    background-color: #8a85c7;
+    padding: 50px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* border: 2px solid 
+    green; */
+    text-align: center;
+    color:white;
+    width: 100%;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: larger;
+    height: 150px;
+  }
+  
+  
+  
+  .ButtonGroup {
+    position: absolute;
+    /* position:relative */
+    top: 20px;
+    right: 20px;
+  }
+  
+  .SignInButton,
+  .SignUpButton {
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .SignUpButton {
+    background-color: #0074d2;
+    color:white
+  }
+  
+  .SignUpButton:hover{
+    background-color: #005ba5b6;
+  }
+  .SignInButton:hover {
+    background-color: #45a049;
+  }
+  @media screen and (max-width: 768px) {
+    /* .ButtonGroup {
+      top:0;
+      left:0;
+      margin-top: 490px;
+    }
+  
+    .SignInButton,
+    .SignUpButton {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    .SignUpButton {
+      margin-left: 10px;
+    } */
+    .Appheader{
+      display: flex;
+      flex-direction: column;
+      height: 350px;
+      justify-content: center;
+      align-items: center;
+    }
+    .Logo{
+      position: relative;
+    }
+    .ButtonGroup{
+      position: relative;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    
+  .Appheader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 450px;
+  }
+ 
+  
+  }
