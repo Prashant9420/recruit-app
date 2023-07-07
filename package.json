@@ -2,7 +2,7 @@
   "name": "recruit-app",
   "version": "0.1.0",
   "private": true,
-  "proxy":"https://16.171.134.58:3000/"
+  "proxy":"https://16.171.134.58:3000/",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
